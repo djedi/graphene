@@ -25,8 +25,8 @@ Create loaders by providing a batch loading function.
             return Promise.resolve([get_user(id=key) for key in keys])
 
 
-A batch loading function accepts an list of keys, and returns a ``Promise``
-which resolves to an list of ``values``.
+A batch loading function accepts a list of keys, and returns a ``Promise``
+which resolves to a list of ``values``.
 
 Then load individual values from the loader. ``DataLoader`` will coalesce all
 individual loads which occur within a single frame of execution (executed once
